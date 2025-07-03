@@ -1,0 +1,18 @@
+{
+  "name": "trivia-duel-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-07-01",
+  "account_id": "0dc5006e37fec3a761abbfa874692a59",
+
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "DUEL_GAME",
+        "class_name": "DuelGame"
+      }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["DuelGame"] }
+  ]
+}

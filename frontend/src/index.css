@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #fdfdfd;
+  color: #333;
+}
+
+.center {
+  max-width: 400px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+button.correct {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+button.wrong {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.question {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* 🔧 Unified selector style (for difficulty dropdown) */
+.selector {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 0.5rem;
+  min-width: 220px;
+  text-align: center;
+  background: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: 0 0 0 2px rgba(100, 100, 255, 0.2);
+}
